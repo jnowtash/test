@@ -1,0 +1,1000 @@
+ 1000  ls
+ 1001  mkdir /tmp/RFS
+ 1002  cd /tmp
+ 1003  ls
+ 1004  cd RFS
+ 1005  cd ~
+ 1006  cd yocto/poky/build/
+ 1007  cd tmp/deploy/
+ 1008  ls
+ 1009  cd images/
+ 1010  ls
+ 1011  cd beaglebone/
+ 1012  ls
+ 1013  cp core-image-minimal-beaglebone-20141202223630.rootfs.tar.bz2 /tmp/RFS
+ 1014  cd /tmp/RFS
+ 1015  tar -xjvf core-image-minimal-beaglebone-20141202223630.rootfs.tar.bz2 
+ 1016  ls
+ 1017  rm core-image-minimal-beaglebone-20141202223630.rootfs.tar.bz2 
+ 1018  ls
+ 1019  ls -s sbin/init.sysvinit init
+ 1020  cd ~
+ 1021  cd yocto/poky/build/
+ 1022  cd tmp/work/beaglebone-poky-linux-gnueabi/linux-yocto/3.14+gitAUTOINC+09424cee64_0143c6ebb4-r0/linux
+ 1023  ls
+ 1024  cd scripts/
+ 1025  ./gen_initramfs_list.sh /tmp/RFS > ../usr/initramfs_list
+ 1026  cd ..
+ 1027  cd usr
+ 1028  ls
+ 1029  ls -l 
+ 1030  cd ..
+ 1031  ls
+ 1032  cd /tmp/RFS
+ 1033  ls
+ 1034  sudo find . -print > bbone_initramfs.cpio
+ 1035  ls
+ 1036  ls -l
+ 1037  sudo find . -print -depth > 1.cpio
+ 1038  ls
+ 1039  ls -l 
+ 1040  rm 1.cpio
+ 1041  sudo find . -print -v > 1.cpio
+ 1042  sudo find . -v > 1.cpio
+ 1043  man cpio
+ 1044  cpio --help
+ 1045  cd /media/root
+ 1046  ls
+ 1047  cd boot
+ 1048  ls
+ 1049  mv uImage uImage.save
+ 1050  sudo mv uImage uImage.save
+ 1051  sudo mv uImage-3.14.0-yocto-standard uImage-3.14.0-yocto-standard.save
+ 1052  ls
+ 1053  sudo mv am335x-boneblack.dtb am335x-boneblack.dtb.save
+ 1054  ls -l 
+ 1055  ls
+ 1056  ls -l 
+ 1057  ls
+ 1058  ls -l 
+ 1059  rm uImage
+ 1060  sudo rm uImage
+ 1061  ls
+ 1062  ls -l 
+ 1063  ln -s uImage--3.14+git0+09424cee64_0143c6ebb4-r0-beaglebone-20141222223052.bin 
+ 1064  ln -s uImage--3.14+git0+09424cee64_0143c6ebb4-r0-beaglebone-20141222223052.bin  uImage
+ 1065  sudo ln -s uImage--3.14+git0+09424cee64_0143c6ebb4-r0-beaglebone-20141222223052.bin  uImage
+ 1066  ls -l 
+ 1067  ls -l
+ 1068  ls uImage
+ 1069  ls -l uImage
+ 1070  cd yocto/
+ 1071  cd poky
+ 1072  ls
+ 1073  cd build
+ 1074  ls
+ 1075  cd tmp
+ 1076  ls
+ 1077  cd /tmp
+ 1078  ls
+ 1079  ls -l
+ 1080  cd ~
+ 1081  cd yocto/
+ 1082  cd poky
+ 1083  ls
+ 1084  cd build
+ 1085  locate *.cpio
+ 1086  cd tmp
+ 1087  cd ..
+ 1088  ls
+ 1089  locate *.cpio
+ 1090  cd ..
+ 1091  ls
+ 1092  cd ..
+ 1093  ls
+ 1094  cd /tmp
+ 1095  ls
+ 1096  mkdir RFS
+ 1097  cd RFS
+ 1098  cd
+ 1099  pwd
+ 1100  mkdir RFS
+ 1101  cd RFS/
+ 1102  ls
+ 1103  tar -xjfv core-image-minimal-beaglebone.tar.bz2 
+ 1104  tar -xjvf core-image-minimal-beaglebone.tar.bz2 
+ 1105  ls
+ 1106  cd ..
+ 1107  cd RFS
+ 1108  mv core-image-minimal-beaglebone.tar.bz2 ..
+ 1109  ls
+ 1110  ls bin
+ 1111  ls sbin
+ 1112  ln -s sbin/init.sysvinit init
+ 1113  ls
+ 1114  cd ..
+ 1115  sudo find . -print > bbone_initramfs.cpio
+ 1116  pwd
+ 1117  cd RFS
+ 1118  ls
+ 1119  find . -iname *.* -print | cpio -ov > bbone_initramfs.cpio
+ 1120  ls
+ 1121  pwd
+ 1122  ls -l
+ 1123  cd yocto/poky/build/tmp/deploy/
+ 1124  ls
+ 1125  cd images/
+ 1126  ls
+ 1127  cd beaglebone/
+ 1128  ls
+ 1129  history 
+ 1130  ls
+ 1131  cp core-image-minimal-beaglebone.tar.bz2 ~/RFS
+ 1132  history 
+ 1133  history | grep cpio
+ 1134  man cpio
+ 1135  cd ..c
+ 1136  cd ..
+ 1137  source oe-init-build-env
+ 1138  cd build
+ 1139  ls
+ 1140  bitbake menuconfig
+ 1141  bitbake -c menuconfig
+ 1142  bitbake linux-yocto -c menuconfig
+ 1143  ls
+ 1144  ls -la
+ 1145  bitbake linux
+ 1146  bitbake
+ 1147  bitbake linux-yocto
+ 1148  bitbake core-image-minimal
+ 1149  cd tmp/
+ 1150  ls
+ 1151  cd deploy/images/beaglebone/
+ 1152  ls -lct
+ 1153  ls *uImage*
+ 1154  rm uImage-beaglebone.bin
+ 1155  cd ../..
+ 1156  cd ./..
+ 1157  cd ..
+ 1158  bitbake core-image-minimal
+ 1159  bitbake -c clean core-image-minimal
+ 1160  bitbake core-image-minimal
+ 1161  ls -lct tmp/deploy/images/beaglebone/*
+ 1162  ls -lct tmp/deploy/images/beaglebone/*uInage*
+ 1163  ls -lct tmp/deploy/images/beaglebone/*uImage*
+ 1164  bitbake linux-yocto -c compile
+ 1165  mv tmp/ tmp1
+ 1166  bitbake linux-yocto -c compile
+ 1167  ls -lct tmp/deploy/images/beaglebone/*uImage*
+ 1168  ls
+ 1169  cd tmp
+ 1170  ls -lct
+ 1171  vi log/cooker/beaglebone/20141222215352.log 
+ 1172  cd ..
+ 1173  locate .config
+ 1174  ls
+ 1175  pwd
+ 1176  cd tmp
+ 1177  ls
+ 1178  ls ~/RFS/
+ 1179  cd ..
+ 1180  bitbake linux-yocto -c menuconfig
+ 1181  ls /home/jnowtash/RFS/
+ 1182  bitbake linux-yocto -C compile
+ 1183  ls
+ 1184  cd tmp
+ 1185  ls
+ 1186  cd deploy/
+ 1187  ls
+ 1188  cd images/
+ 1189  ks
+ 1190  ls
+ 1191  cd beaglebone/
+ 1192  ks
+ 1193  ls
+ 1194  reset
+ 1195  ls
+ 1196  ls -l
+ 1197  ls -l 
+ 1198  cp uImage /media/root/boot
+ 1199  sudo cp uImage /media/root/boot
+ 1200  sudo cp uImage* /media/root/boot
+ 1201  ls
+ 1202  ls -l
+ 1203  cd /media/
+ 1204  ls
+ 1205  cd root
+ 1206  ls 
+ 1207  ls -l 
+ 1208  cd boot
+ 1209  ls -l 
+ 1210  ls
+ 1211  sudo mv am335x-boneblack.dtb.save am335x-boneblack.dtb
+ 1212  gedit am335x-boneblack.dtb 
+ 1213  hexdump am335x-boneblack.dtb 
+ 1214  file am335x-boneblack.dtb 
+ 1215  cd /RFS
+ 1216  ls
+ 1217  cd ~
+ 1218  cd RFS
+ 1219  ls
+ 1220  cd dev
+ 1221  ls -l
+ 1222  ls -l 
+ 1223  man mknod
+ 1224  cd /dev
+ 1225  ls -l
+ 1226  ls -l tty*
+ 1227  cd yocto/poky
+ 1228  ls
+ 1229  source oe-init-build-env
+ 1230  cd tmp
+ 1231  ls
+ 1232  cd deploy/
+ 1233  ls
+ 1234  cd images/
+ 1235  ls
+ 1236  cd beaglebone/
+ 1237  ls
+ 1238  ls MLO
+ 1239  ls
+ 1240  cd ..
+ 1241  cd tmp1
+ 1242  ls
+ 1243  cd ..
+ 1244  ls
+ 1245  cd tmp1
+ 1246  ls
+ 1247  cd deploy/
+ 1248  ls
+ 1249  cd images/
+ 1250  cd beaglebone/
+ 1251  ls
+ 1252  ps
+ 1253  ps -aux
+ 1254  top
+ 1255  ps -aux
+ 1256  top
+ 1257  cd yocto/
+ 1258  cd poky-2
+ 1259  ls
+ 1260  cd build/
+ 1261  ls
+ 1262  cd tmp
+ 1263  ls
+ 1264  cd deploy/
+ 1265  ls
+ 1266  cd images/
+ 1267  ls
+ 1268  cd beaglebone/
+ 1269  ls
+ 1270  ls -l
+ 1271  ls
+ 1272  rm *
+ 1273  ls
+ 1274  cd ..
+ 1275  ls
+ 1276  rm -R beaglebone/
+ 1277  ls
+ 1278  cd ..
+ 1279  ls
+ 1280  rm -R images
+ 1281  rm -R licenses/
+ 1282  rm -R rpm
+ 1283  ls
+ 1284  cd ..
+ 1285  ls
+ 1286  rm -R deploy/
+ 1287  rm -R cache/
+ 1288  rm -R sstate-control/
+ 1289  rm -R stamps/
+ 1290  ls
+ 1291  rm -R work/
+ 1292  cd /media/
+ 1293  ls
+ 1294  cd BOOT/
+ 1295  ls
+ 1296  cd ..
+ 1297  gparted
+ 1298  sudo gparted
+ 1299  ls
+ 1300  cd /m
+ 1301  cd /media/
+ 1302  ls
+ 1303  cd boot
+ 1304  ls
+ 1305  cd ..
+ 1306  cd root
+ 1307  ls
+ 1308  rm -Rf *
+ 1309  ls
+ 1310  sudo rm -Rf *
+ 1311  ls
+ 1312  cd b
+ 1313  cd boot/
+ 1314  ls
+ 1315  ls -l
+ 1316  ls -la
+ 1317  ls
+ 1318  cd ..
+ 1319  ls
+ 1320  ls -la
+ 1321  cd ..
+ 1322  cd boot/
+ 1323  ls
+ 1324  ls
+ 1325  history 
+ 1326  ls hist.txt 
+ 1327  history > hist2.txt
+ 1328  cp hist2.txt /media/88AF-DBA0/
+ 1329  ls
+ 1330  pwd
+ 1331  ls
+ 1332  cd yocto/
+ 1333  ls
+ 1334  cd poky
+ 1335  cd ..
+ 1336  cp -R poky poky-2
+ 1337  ls
+ 1338  rm -Rf poky-2
+ 1339  cd poky
+ 1340  cd ..
+ 1341  cd poky-2
+ 1342  ls
+ 1343  cd build/
+ 1344  ls
+ 1345  rm -Rf tmp1
+ 1346  ls
+ 1347  rm -R downloads/
+ 1348  rm -Rf downloads/
+ 1349  ls
+ 1350  rm -Rf conf/
+ 1351  rm -Rf cache/
+ 1352  ls
+ 1353  rm *
+ 1354  ls
+ 1355  cd tmp
+ 1356  ls
+ 1357  rm *
+ 1358  ls
+ 1359  cd ..
+ 1360  ls
+ 1361  rm -R tmp
+ 1362  ls
+ 1363  cd ..
+ 1364  ls
+ 1365  rm -R build/
+ 1366  ls
+ 1367  cd ..
+ 1368  ls
+ 1369  rm -R poky-2
+ 1370  ls
+ 1371  cd poky
+ 1372  ls
+ 1373  source oe-init-build-env
+ 1374  ls
+ 1375  cd tmp
+ 1376  ls
+ 1377  cd ..
+ 1378  mv tmp tmp2
+ 1379  ls
+ 1380  cd conf/
+ 1381  ls
+ 1382  more local.conf
+ 1383  ls
+ 1384  cd ..
+ 1385  ls
+ 1386  bitbake core-image-minimal
+ 1387  ls
+ 1388  cd tmp
+ 1389  ;s
+ 1390  ls
+ 1391  cd deploy/
+ 1392  ls
+ 1393  cd images/
+ 1394  ls
+ 1395  cd beaglebone/
+ 1396  ls
+ 1397  ls -l
+ 1398  cp MLO-beaglebone /media/boot
+ 1399  cp u-boot-beaglebone.img /media/boot/u-boot.img
+ 1400  sudo tar -xvf core-image-minimal-beaglebone.tar.bz2 -C /media/root/
+ 1401  ls
+ 1402  ls -l uImage
+ 1403  ls -l
+ 1404  cp uImage /media/root/boot
+ 1405  sudo cp uImage /media/root/boot
+ 1406  ls *.dtb
+ 1407  ls -l *.dtb
+ 1408  cp uImage-am335x-boneblack.dtb /media/boot
+ 1409  cp uImage-am335x-boneblack.dtb /media/root/boot
+ 1410  sudo cp uImage-am335x-boneblack.dtb /media/root/boot
+ 1411  ls
+ 1412  cd /media/
+ 1413  cd boot
+ 1414  ls
+ 1415  cp uImage-am335x-boneblack.dtb am335-boneblack.dtb
+ 1416  cd ..
+ 1417  cd root
+ 1418  cd boot
+ 1419  ls
+ 1420  cp uImage-am335x-boneblack.dtb am335x-boneblack.dtb
+ 1421  sudo cp uImage-am335x-boneblack.dtb am335x-boneblack.dtb
+ 1422  ls
+ 1423  cd ..
+ 1424  cd boot
+ 1425  ls
+ 1426  mv am335-boneblack.dtb am335x-boneblack.dtb
+ 1427  ls -l
+ 1428  cd ..
+ 1429  cd root
+ 1430  cd boo
+ 1431  cd boot
+ 1432  ls -l 
+ 1433  cd yocto/
+ 1434  cd
+ 1435  ls
+ 1436  cd yocto/
+ 1437  ls
+ 1438  cd yoc
+ 1439  ls
+ 1440  cd poky
+ 1441  ls
+ 1442  cd build/
+ 1443  ls
+ 1444  cd tmp1
+ 1445  ls
+ 1446  cd deploy/
+ 1447  ls
+ 1448  cd images/
+ 1449  ls
+ 1450  cd beaglebone/
+ 1451  ls
+ 1452  cd ..
+ 1453  cd tmp2
+ 1454  cd ..
+ 1455  cd tmp2
+ 1456  ls
+ 1457  cd deploy/
+ 1458  ls
+ 1459  cd images/
+ 1460  cd beaglebone/
+ 1461  ls
+ 1462  cd ..
+ 1463  ls
+ 1464  cd tmp
+ 1465  ls -l 
+ 1466  cd deploy/
+ 1467  ls
+ 1468  cd images/
+ 1469  ls - l
+ 1470  ls -l 
+ 1471  cd beaglebone/
+ 1472  ls
+ 1473  cd ..
+ 1474  ls
+ 1475  cd ..
+ 1476  ls
+ 1477  ls *.txt
+ 1478  cd ~
+ 1479  ls *.txt
+ 1480  cd yocto/
+ 1481  cd poky
+ 1482  cd build/
+ 1483  cd tmp
+ 1484  ls
+ 1485  cd deploy/
+ 1486  ls -l
+ 1487  cd images/beaglebone/
+ 1488  ls
+ 1489  cd ..
+ 1490  cd beaglebone/
+ 1491  ls -l uImage
+ 1492  ls -l *.bz2
+ 1493  pwd
+ 1494  cd ..
+ 1495  ls -l  
+ 1496  rm -Rf tmp
+ 1497  cd ..
+ 1498  source oe-init-build-env build/
+ 1499  ls
+ 1500  bitbake core-image-base
+ 1501  ls
+ 1502  cd tmp
+ 1503  ls
+ 1504  cd deploy/
+ 1505  ls
+ 1506  cd images/
+ 1507  ls
+ 1508  cd beaglebone/
+ 1509  ls
+ 1510  cd /RFS
+ 1511  cd ~/RFS
+ 1512  ls
+ 1513  cd yocto/
+ 1514  ls
+ 1515  cd poky-1/
+ 1516  ls
+ 1517  cd build
+ 1518  ls
+ 1519  cd tmp
+ 1520  ls -l
+ 1521  cd deploy/
+ 1522  cd images/
+ 1523  cd beaglebone/
+ 1524  ls -l
+ 1525  ls *.gz
+ 1526  ls uImage
+ 1527  ls -l uImage
+ 1528  ls -l *.bz2
+ 1529  cd ~
+ 1530  ls *.txt
+ 1531  gedit hist2.txt
+ 1532  gparted
+ 1533  sudo gparted
+ 1534  cd /media/root
+ 1535  ls
+ 1536  rm -Rf *
+ 1537  sudo rm -Rf *
+ 1538  ls
+ 1539  sudo gparted
+ 1540  cd ~/yocto/
+ 1541  cd poky
+ 1542  ls
+ 1543  cd build/
+ 1544  ls
+ 1545  cd tmp
+ 1546  de deploy/
+ 1547  ls
+ 1548  cd deploy/
+ 1549  ls
+ 1550  cd images/
+ 1551  ls
+ 1552  cd beaglebone/
+ 1553  ls
+ 1554  ls MLO*
+ 1555  ls -l MLO*
+ 1556  cp MLO /media/BOOT/MLO
+ 1557  ls -l u-boot*
+ 1558  cp u-boot.img /media/BOOT/u-boot.img
+ 1559  ls /media/BOOT/
+ 1560  sudo tar -xvf core-image-base-beaglebone.tar.bz2 -C /media/ROOT/
+ 1561  ls /media/BOOT/
+ 1562  ls -l /media/BOOT/
+ 1563  ls -l /media/ROOT/
+ 1564  ls -l /media/ROOT/boot/
+ 1565  sudo gparted
+ 1566  history 
+ 1567  cd ~/yocto/poky/build/
+ 1568  ls
+ 1569  cd tmp
+ 1570  ls
+ 1571  cd deploy/
+ 1572  ls
+ 1573  cd images/
+ 1574  cd beaglebone/
+ 1575  ls
+ 1576  sudo tar -xvf core-image-base-beaglebone.tar.bz2  -C /media/root/
+ 1577  gtkterm
+ 1578  sudo apt-get install gtkterm
+ 1579  gtkterm 
+ 1580  sudo gtkterm 
+ 1581  gtkterm 
+ 1582  sudo gtkterm 
+ 1583  sudo gpated
+ 1584  sudo gparted
+ 1585  cd yocto/
+ 1586  ls
+ 1587  cd poky
+ 1588  ls
+ 1589  cd meta
+ 1590  ls
+ 1591  cd ..
+ 1592  cd build/
+ 1593  ls
+ 1594  cd tmp
+ 1595  ls
+ 1596  cd deploy/
+ 1597  ls
+ 1598  cd images/
+ 1599  ls
+ 1600  cd beaglebone/
+ 1601  ls
+ 1602  ls -l
+ 1603  ls
+ 1604  cp MLO-beaglebone /media/BOOT/MLO
+ 1605  cp u-boot-beaglebone.img /media/BOOT//u-boot.img
+ 1606  sudo tar -xvf core-image-base-beaglebone.tar.bz2 -C /media/ROOT/
+ 1607  df
+ 1608  cd pycharm-community-4.0.4/
+ 1609  ls
+ 1610  tar xvf pycharm-community-4.0.4.tar.gz 
+ 1611  ./pycharm.sh
+ 1612  /bin/pycharm.sh
+ 1613  ./bin/pycharm.sh
+ 1614  cd bin
+ 1615  pwd
+ 1616  ks
+ 1617  ls
+ 1618  cd ..
+ 1619  cd pycharm-community-4.0.4/
+ 1620  cd bin
+ 1621  ls
+ 1622  cd pycharm-community-4.0.4
+ 1623  cd bin
+ 1624  ls
+ 1625  ./pycharm.sh
+ 1626  cd ..
+ 1627  ls
+ 1628  cd pycharm-community-4.0.4/
+ 1629  ls
+ 1630  cd bin
+ 1631  ls -l
+ 1632  pycharm.sh
+ 1633  cd ..
+ 1634  ./bin/pycharm.sh 
+ 1635  cd help
+ 1636  ls
+ 1637  ls -l
+ 1638  gedit pycharmhelp.jar 
+ 1639  reset
+ 1640  ls
+ 1641  more ReferenceCard.pdf 
+ 1642  cd pycharm-community-4.0.4/
+ 1643  ls
+ 1644  cd bin
+ 1645  ls
+ 1646  cd bin
+ 1647  ls
+ 1648  cd pycharm-community-4.0.4/
+ 1649  ls
+ 1650  cd ..
+ 1651  ls
+ 1652  cd pycharm-community-4.0.4/
+ 1653  ls
+ 1654  cdbin
+ 1655  ls
+ 1656  cd bin
+ 1657  ls
+ 1658  ls -l 
+ 1659  ./inspect.sh 
+ 1660  ./pycharm.sh 
+ 1661  cd /bin
+ 1662  ls
+ 1663  ls py*
+ 1664  cd ..
+ 1665  cd /usr/bin
+ 1666  ls -l
+ 1667  ls -l py*
+ 1668  cd ..
+ 1669  cd ~
+ 1670  ls
+ 1671  cd pycharm-community-4.0.4/
+ 1672  ls
+ 1673  cd bin
+ 1674  ./pycharm.sh 
+ 1675  cd /y
+ 1676  cd yocto/poky
+ 1677  ls
+ 1678  cd build/
+ 1679  ls
+ 1680  cd tmp
+ 1681  cd buildstats/
+ 1682  cd ..
+ 1683  ls
+ 1684  cd deploy/
+ 1685  cd b
+ 1686  ls
+ 1687  cd images/
+ 1688  cd beaglebone/
+ 1689  ls
+ 1690  ls -l core-image-base*
+ 1691  cp core-image-base-beaglebone.tar.bz2 ~/RFS
+ 1692  ls
+ 1693  cd ..
+ 1694  source oe-init-build-env
+ 1695  bitbake linux-yocto -c menuconfig
+ 1696  bitbake linux-yocto -C compile
+ 1697  ls
+ 1698  cd ..
+ 1699  ls
+ 1700  cd ..
+ 1701  ls
+ 1702  cd poky-1
+ 1703  ls
+ 1704  cd build
+ 1705  ls
+ 1706  cd tmp
+ 1707  ls
+ 1708  cd deploy/images/beaglebone/
+ 1709  ls
+ 1710  ls -l
+ 1711  cd ..
+ 1712  ls
+ 1713  gparted
+ 1714  sudo gparted
+ 1715  cd ~/yocto/poky
+ 1716  ls
+ 1717  cd build/
+ 1718  ls
+ 1719  cd tmp-core-base-image/
+ 1720  ls
+ 1721  cd deploy/images/
+ 1722  ls
+ 1723  cd beaglebone/
+ 1724  ls- l
+ 1725  ls -l 
+ 1726  ls
+ 1727  cd RFS
+ 1728  ls
+ 1729  ls -l 
+ 1730  cd ~/yocto/
+ 1731  ls
+ 1732  cd poky
+ 1733  ls
+ 1734  cd scripts/
+ 1735  ls
+ 1736  cd ..
+ 1737  ls
+ 1738  cd build/
+ 1739  ls
+ 1740  cd tmp
+ 1741  ls
+ 1742  cd deploy/
+ 1743  ls
+ 1744  cd images/
+ 1745  ls
+ 1746  cd beaglebone/
+ 1747  ls
+ 1748  ls -l 
+ 1749  history
+ 1750  ls
+ 1751  cd ~
+ 1752  ls
+ 1753  cd RFS
+ 1754  ls
+ 1755  cd ..
+ 1756  mv RFS RFS-save
+ 1757  mkdir RFS
+ 1758  cd RFS
+ 1759  cd ..
+ 1760  ls
+ 1761  pwd
+ 1762  rm core-image-minimal-beaglebone.tar.bz2 
+ 1763  rm bbone_initramfs.cpio 
+ 1764  ls
+ 1765  cd RFS
+ 1766  ls
+ 1767  tar -xjvf core-image-base-beaglebone.tar.bz2 
+ 1768  ls
+ 1769  rm core-image-base-beaglebone.tar.bz2 
+ 1770  ls
+ 1771  ln -s sbin/init.sysvinit init
+ 1772  find . -iname *.* -print
+ 1773  find . -iname *.* -print | cpio -ov > bbone_initramfs.cpio
+ 1774  ls
+ 1775  pwd
+ 1776  locate .config
+ 1777  ls -la
+ 1778  cd ..
+ 1779  ls -la
+ 1780  date
+ 1781  ls -la .config
+ 1782  ls -la 
+ 1783  cd .config
+ 1784  ls -l
+ 1785  cd ..
+ 1786  pwd
+ 1787  cd yocto/poky
+ 1788  ls
+ 1789  cd build/
+ 1790  ls
+ 1791  cd tmp
+ 1792  ls
+ 1793  cd deploy/
+ 1794  ls
+ 1795  cd images/
+ 1796  ls
+ 1797  ls -l beaglebone/
+ 1798  date
+ 1799  cd beaglebone/
+ 1800  more README_-_DO_NOT_DELETE_FILES_IN_THIS_DIRECTORY.txt 
+ 1801  ls -l
+ 1802  ls
+ 1803  ls -l
+ 1804  ls MLO
+ 1805  cp MLO /media/BOOT/MLO
+ 1806  cp u-boot.img /media/BOOT/u-boot.img
+ 1807  ls -l 
+ 1808  ls- l /media/BOOT/
+ 1809  ls  -l /media/BOOT/
+ 1810  cd /media/root/\
+ 1811  cd /media/root/
+ 1812  ls
+ 1813  cd ~/yocto/poky/build/tmp/deploy/images/beaglebone/
+ 1814  sudo tar -xvf core-image-base-beaglebone.tar.bz2 -C /media/root/
+ 1815  ls -l /media/root/
+ 1816  ls- l
+ 1817  ls -l
+ 1818  cd ../../..
+ 1819  cd ..
+ 1820  ls
+ 1821  cd tmp1
+ 1822  ls
+ 1823  cd deploy/images/
+ 1824  cd beaglebone/
+ 1825  ls -l
+ 1826  cd ..
+ 1827  ls
+ 1828  cd tmp2
+ 1829  ls
+ 1830  cd deploy//images/beaglebone/
+ 1831  ls -l
+ 1832  cd ..
+ 1833  ls
+ 1834  cd ..
+ 1835  ls
+ 1836  cd ..
+ 1837  ls
+ 1838  cd ..
+ 1839  ls
+ 1840  cd tmp
+ 1841  ls -l 
+ 1842  cd ..
+ 1843  ls
+ 1844  cd conf/
+ 1845  ls
+ 1846  cd ..
+ 1847  ls
+ 1848  rm -R tmp2
+ 1849  rm -Rf tmp2
+ 1850  mv tmp tmp-core-base-image
+ 1851  cd ..
+ 1852  source oe-init-build-env
+ 1853  cd conf
+ 1854  more local.conf
+ 1855  bitbake core-image-base
+ 1856  cd ..
+ 1857  cd tmp
+ 1858  ls
+ 1859  cd deploy/
+ 1860  ls
+ 1861  cd images/
+ 1862  cd beaglebone/
+ 1863  ls -l
+ 1864  mount
+ 1865  ls -lct /media/ROOT/
+ 1866  ls -lct /media/BOOT/
+ 1867  cd /media/ROOT/
+ 1868  ls -lct
+ 1869  cd boot/
+ 1870  ls -lct
+ 1871  mv uImage--3.14-ramfs uImage-3.14-ramfs
+ 1872  sudo mv uImage--3.14-ramfs uImage-3.14-ramfs
+ 1873  ls -lct
+ 1874  rm uImage
+ 1875  sudo  rm uImage
+ 1876  ln -s uImage-3.14-ramfs uImage
+ 1877  sudo ln -s uImage-3.14-ramfs uImage
+ 1878  ls -lct
+ 1879  cd ~/yocto/poky/build/tmp-core-base-image/deploy/images/beaglebone/
+ 1880  ls -l
+ 1881  sudo cp uImage--3.14+git0+09424cee64_0143c6ebb4-r0-beaglebone-20150116163531.bin /media/ROOT/boot/uImage--3.14-ramfs
+ 1882  history\
+ 1883  history
+ 1884  ls *.txt
+ 1885  history > hist3.txt
+ 1886  ls -l *.txt
+ 1887  ifconfig
+ 1888  ps -ef | grep -i ftp
+ 1889  ls
+ 1890  cd /usr/sbin/vs*
+ 1891  cd /sbin/vsf*
+ 1892  ls /sbin/vsf*
+ 1893  cd /sbin
+ 1894  ls
+ 1895  ls vs*
+ 1896  cd service
+ 1897  ps -ef | grep -i ftp
+ 1898  cd /etc
+ 1899  ls vsftpd.conf 
+ 1900  gedit vsftpd.conf 
+ 1901  sudo gedit vsftpd.conf 
+ 1902  cd ~
+ 1903  /sbin/services/vsftpd stop
+ 1904  ls /sbin
+ 1905  ps -ef | grep -i ftp
+ 1906  /usr/sbin/vsftpd stop
+ 1907  sudo /usr/sbin/vsftpd stop
+ 1908  sudo /usr/sbin/vsftpd restart
+ 1909  sudo /usr/sbin/vsftpd start
+ 1910  ls /usr/sbin/vsftpd 
+ 1911  ls /usr/sbin/vsftpd stop
+ 1912  /usr/sbin/vsftpd stop
+ 1913  /usr/sbin vsftpd stop
+ 1914  vsftpd stop
+ 1915  vsftp.d stop
+ 1916  vsftpd stop
+ 1917  /usr/sbin/service vsftpd stop
+ 1918  sudo /usr/sbin/service vsftpd stop
+ 1919  sudo /usr/sbin/service vsftpd start
+ 1920  ps -ef | grep -i ftp
+ 1921  ls
+ 1922  pwd
+ 1923  ls -l *.txt
+ 1924  ftp 172.16.202.46
+ 1925  gedit /etc/vsftpd.conf
+ 1926  sudo gedit /etc/vsftpd.conf
+ 1927  sudo /usr/sbin/service vsftpd stop
+ 1928  sudo /usr/sbin/service vsftpd start
+ 1929  ls hist3.txt 
+ 1930  ls -l hist3.txt 
+ 1931  ls *.txt
+ 1932  history > hist3.txt
+ 1933  ls -l *.txt
+ 1934  cd ~/yocto/poky
+ 1935  ls
+ 1936  cd build
+ 1937  ls -l
+ 1938  cd tmp
+ 1939  ls
+ 1940  cd deploy/images/beaglebone/
+ 1941  ls -l 
+ 1942  cd ~/yocto/poky
+ 1943  cd /media/root/
+ 1944  ls -lct
+ 1945  cd etc/
+ 1946  fgrep -r -r mknod *
+ 1947  gedit  inittab  &
+ 1948  fgrep -r -r sda *
+ 1949  fgrep -r -e console  *
+ 1950  cd /media/ROOT/
+ 1951  ls
+ 1952  cd boot
+ 1953  ls
+ 1954  mv uImage-3.14-ramfs uImage-3.14-ramfs-old
+ 1955  sudo mv uImage-3.14-ramfs uImage-3.14-ramfs-old
+ 1956  cp ~/yocto/poky/build/tmp/deploy/images/beaglebone/uImage uImage-3.14-ramfs
+ 1957  sudo cp ~/yocto/poky/build/tmp/deploy/images/beaglebone/uImage uImage-3.14-ramfs
+ 1958  ls -l
+ 1959  sync
+ 1960  cd yocto/poky/build/
+ 1961  ls
+ 1962  cd tmp-core-base-image/
+ 1963  cd deploy/images/
+ 1964  cd beaglebone/
+ 1965  ls
+ 1966  cd /RGFS
+ 1967  cd /RFS
+ 1968  ls
+ 1969  cd ~/RFS
+ 1970  ls
+ 1971  ls -l
+ 1972  more init
+ 1973  mknod  dev/console c 5 1
+ 1974  sudo mknod  dev/console c 5 1
+ 1975  sudo mknod  dev/ttyO0  c 251 0
+ 1976  ls dev
+ 1977  ls
+ 1978  cd ~/yocto/poky
+ 1979  cd build/
+ 1980  ls
+ 1981  cd mv tmp tmp-save
+ 1982  ls
+ 1983  mv tmp tmp-save
+ 1984  mv tmp-core-base-image tmp
+ 1985  cd ..
+ 1986  source oe-init-build-env
+ 1987  bitbake yocto-linux -C compile
+ 1988  bitbake linux-yocto -C compile
+ 1989  cd tmp
+ 1990  cd deploy/
+ 1991  cd images/beaglebone/
+ 1992  ls
+ 1993  ls -l
+ 1994  ls
+ 1995  ls -l 
+ 1996  date
+ 1997  history
+ 1998  ls *.txt
+ 1999  history > hist4.txt
